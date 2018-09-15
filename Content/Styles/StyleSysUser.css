@@ -1,0 +1,230 @@
+﻿@font-face {
+	font-family: "SairaCondensed-Thin";
+	src: url('../Fonts/SairaCondensed-Thin.ttf') format('truetype');
+}
+
+* {
+	outline: none;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "SairaCondensed-Thin";
+	letter-spacing: 1px;
+
+	background: url('../Images/branch.jpg') no-repeat fixed;
+	background-size: cover;
+	display: table;
+
+	user-select: none;
+	overflow: hidden;
+}
+
+main {
+	vertical-align: middle;
+
+	display: table-cell;
+}
+
+thead {
+	cursor: move;
+	font-size: 40px;
+}
+
+table {
+	color: white;
+
+	background: rgba(0, 0, 0, .6);
+
+	border: 1px solid rgb(255, 162, 0);
+	box-shadow: rgb(255, 162, 0) 0 0 120px -30px;
+    margin: 0 auto;
+	
+    white-space: nowrap;
+}
+
+tbody {
+	cursor: default;
+	font-size: 24px;
+	vertical-align: top;
+
+	display: inline-block;
+
+	margin: 5px 30px 10px;
+}
+
+thead {
+	text-align: center;
+}
+
+tbody tr:first-child td {
+	font-size: 28px;
+
+	text-align: center;
+}
+
+tbody tr:not(:first-child) td:first-child {
+	text-align: right;
+}
+
+tbody tr:not(:first-child) td:first-child:after {
+	content: ':';
+
+	margin-right: 10px;
+}
+
+tfoot td {
+	padding: 0 70px;
+}
+
+tfoot input:not(:first-child) {
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	float: right;
+	font-family: "SairaCondensed-Thin";
+	font-size: 20px;
+	
+	background: none;
+
+	border: 1px solid rgb(85, 151, 88);
+	margin: 10px 0 10px 3px;
+	
+}
+
+tfoot input:first-child {
+	display: none;
+}
+
+tbody:first-of-type input::placeholder, textarea::placeholder {
+	font-family: Arial;
+	font-size: 16px;
+	font-style: italic;
+
+	padding-top: 10px;
+}
+
+tbody:first-of-type input {
+	color: rgb(255, 193, 85);
+	font-family: "SairaCondensed-Thin";
+	font-size: 20px;
+	text-overflow: ellipsis;
+
+	background: none;
+	overflow: hidden;
+
+	padding-left: 10px;
+	border: none;
+	border-bottom: 1px solid rgb(255, 162, 0);
+
+	transition: all .7s;
+}
+
+tbody:first-of-type input:focus {
+	background: rgba(0, 0, 0, .2);
+}
+
+[for="upload"] {
+	height: 34px;
+
+	cursor: pointer;
+	font-size: 20px;
+
+	display: inline-block;
+
+	border: 1px solid rgb(85, 151, 88);
+	margin: 10px 0;
+	padding: 0 5px;
+}
+
+textarea {
+	height: 35px;
+	resize: none;
+
+	color: rgb(255, 193, 85);
+	font-family: "SairaCondensed-Thin";
+	font-size: 20px;
+	vertical-align: middle;
+
+	background: none;
+
+	padding: 0 10px;
+	border: 1px dotted rgb(255, 162, 0);
+
+	transition: all .7s;
+}
+
+textarea:focus {
+	background: rgba(0, 0, 0, .2);
+}
+
+[type="radio"], [type="checkbox"] {
+	display: block;
+
+	margin: 0 auto;
+}
+
+.sexOption, .profOption {
+	width: 20px;
+
+	color: rgb(255, 193, 85);
+	font-size: 20px;
+	text-align: center;
+	
+	display: inline-block;
+
+	padding-top: 5px;
+}
+
+.profOption {
+	padding-bottom: 6px;
+}
+
+thead span {
+	opacity: 0;
+
+	display: inline-block;
+}
+
+select {
+	width: 160px;
+
+	color: rgb(255, 193, 85);
+	font-family: "SairaCondensed-Thin";
+	font-size: 20px;
+	vertical-align: top;
+
+	background: none;
+
+	padding-left: 10px;
+	border: none;
+}
+
+option {
+	font-size: 16px;
+	font-style: normal;
+	color: rgb(255, 193, 85);
+
+	background: rgb(20, 20, 20);
+
+	border: none;
+}
+
+option:first-child {
+	font-style: italic;
+	color: rgb(117, 117, 117);
+}
+
+#age {
+	width: 100px;
+}
+
+#pass, #rePass {
+	width: 150px;
+}
